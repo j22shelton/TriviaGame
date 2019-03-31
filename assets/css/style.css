@@ -1,0 +1,23 @@
+Header{
+    text-shadow: 3px 3px black;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+    color: lightblue;
+    font-size: 75px;
+}
+
+
+body{
+    background: url("http://www.adsrex.com/wallpapers/animals/peacock/peacock_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    
+}
+
+#play, #done, #restart {
+    text-shadow: 1px 1px black;
+    color: rgb(50, 52, 53);
+}
+
