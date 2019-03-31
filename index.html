@@ -4,14 +4,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Crystals Collector</title>
+    <title>>Wild Bird Trivia!</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 
 <br>
 <header>
-<h1>Trivia Questions!!</h1>
+<h1>Wild Bird Trivia!</h1>
+<br>
 </header>
 
 <body>
@@ -19,27 +20,90 @@
 
 <div id= "start">
 
-<button id= "play">Play!!</button>
+<button id= "play">Play</button>
 
 </div>
+<br>
+<div id=timer>You have <span id="countdown">60 seconds to complete the quiz!</span></div>
+ <br>
 
-<div id=timer>You have <span id="countdown">10</span> seconds!! </div>
- 
 <div id="quiz">
 <div id="question">
-<form>
-    <label>Which North American bird in the finch family is one of the most common state birds?</label>
+<form action="trivia questions">
+    <label>Which North American bird in the finch family is the most common state bird?</label>
+    <br>
+    <input type="radio" name="1A" value="pterodactyl"> Pterodactyl<br>
+    <input type="radio" name="1B" value="nightingale"> Nightingale<br>
+    <input type="radio" name="1C" value="cardinal"> Cardinal<br>
+    <input type="radio" name="1D" value="bluebird"> Bluebird<br>
+    <br>
+    <label>What is the smallest bird in North America?</label>
+    <br>
+    <input type="radio" name="1A" value="bluejay"> Bluejay<br>
+    <input type="radio" name="1B" value="sparrow"> Sparrow<br>
+    <input type="radio" name="1C" value="owl"> Owl<br>
+    <input type="radio" name="1D" value="hummingbird"> Hummingbird<br>
+    <br>
+    <label>What is the most coloful bird in North America?</label>
+    <br>
+    <input type="radio" name="1A" value="painted bunting"> Painted Bunting<br>
+    <input type="radio" name="1B" value="crow"> Crow<br>
+    <input type="radio" name="1C" value="gold finch"> Gold Finch<br>
+    <input type="radio" name="1D" value="canadian goose"> Canadian Goose<br>
+    <br>
+    <label>Which bird is a night hunter?</label>
+    <br>
+    <input type="radio" name="1A" value="cardinal"> Cardinal<br>
+    <input type="radio" name="1B" value="owl"> Owl<br>
+    <input type="radio" name="1C" value="duck"> Duck<br>
+    <input type="radio" name="1D" value="wren"> Wren<br>
+    <br>
+    <label>What is the biggest living bird in North America?</label>
+    <br>
+    <input type="radio" name="1A" value="condor"> Condor<br>
+    <input type="radio" name="1B" value="sparrow"> Sparrow<br>
+    <input type="radio" name="1C" value="finch"> finch<br>
+    <input type="radio" name="1D" value="duck"> Duck<br>
+    <br>
+    <label>What bird is great a mimicking human sounds?</label>
+    <br>
+    <input type="radio" name="1A" value="hummingbird"> Hummingbird<br>
+    <input type="radio" name="1B" value="nightingale"> Nightingale<br>
+    <input type="radio" name="1C" value="raven"> Raven<br>
+    <input type="radio" name="1D" value="bluebird"> Bluebird<br>
+    <br>
+    <label>What is the fastest bird on 2 legs?</label>
+    <br>
+    <input type="radio" name="1A" value="ostrich"> Ostrich<br>
+    <input type="radio" name="1B" value="crow"> Crow<br>
+    <input type="radio" name="1C" value="cardinal"> Cardinal<br>
+    <input type="radio" name="1D" value="bluebird"> Bluebird<br>
+    <br>
+    <label>What was the name of the Eagle that escaped from the London zoo in 1965?</label>
+    <br>
+    <input type="radio" name="1A" value="freebird">FreeBird<br>
+    <input type="radio" name="1B" value="goldie"> Goldie<br>
+    <input type="radio" name="1C" value="baldie"> Baldie<br>
+    <input type="radio" name="1D" value="pterodactyl"> Pterodactyl<br>
+    <br>
+
 </form>
 </div>
+<button id="done">Finish</button>
+</div>
+<div id=results>
+    <h1>Results</h1>
+    <p>Correct: <span id=correct>0</span></p>
+    <p>Incorrect: <span id=incorrect>0</span></p>
+    <p>Blank: <span id=blank>0</span></p>
+    <br>
+<button id="restart">Restart</button>
+<br>
 </div>
 
 
-
-
-</body>
-
 <script type="text/javascript" src="assets/javascript/game.js"></script>
-        
+
 </body>
 
 </html>
