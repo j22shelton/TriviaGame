@@ -11,7 +11,7 @@
 
 
 <header>
-<h1><b>Wild  Bird Trivia!</b></h1>
+    <h1><b>Wild  Bird Trivia!</b></h1>
 </header>
 <br>
 <br>
@@ -19,93 +19,102 @@
 <body>
 <div id= "container">
 
-<div id= "start">
+    <div id= "start-container">
 
-<button id= "play">Play</button>
+        <button id= "start">Start</button>
 
+    </div>
+    <br>
+    <div id=timer><b>You have <span id="countdown">60 seconds</span> to complete the quiz!</b></div>
+    <br>
+
+    <div id="quiz">
+        <div id="question">
+            <form action="trivia questions">
+                <label><h3>Which North American bird in the finch family is the most common state bird?</h3></label>
+                <br>
+                <input type="radio" name="1answer" value="pterodactyl"> Pterodactyl<br>
+                <input type="radio" name="1answer" value="nightingale"> Nightingale<br>
+                <input type="radio" name="1answer" value="cardinal"> Cardinal<br>
+                <input type="radio" name="1answer" value="peacock"> Peacock<br>
+                <br>
+                <label><h3>What is the smallest bird in North America?</h3></label>
+                <br>
+                <input type="radio" name="2answer" value="bluejay"> Bluejay<br>
+                <input type="radio" name="2answer" value="sparrow"> Sparrow<br>
+                <input type="radio" name="2answer" value="chickadee"> Chickadee<br>
+                <input type="radio" name="2answer" value="hummingbird"> Hummingbird<br>
+                <br>
+                <label><h3>What is the most coloful bird in North America?</h3></label>
+                <br>
+                <input type="radio" name="3answer" value="painted bunting"> Painted Bunting<br>
+                <input type="radio" name="3answer" value="crow"> Crow<br>
+                <input type="radio" name="3answer" value="gold finch"> Gold Finch<br>
+                <input type="radio" name="3answer" value="canadian goose"> Canadian Goose<br>
+                <br>
+                <label><h3>Which bird is a night hunter?</h3></label>
+                <br>
+                <input type="radio" name="4answer" value="parrot"> Parrot<br>
+                <input type="radio" name="4answer" value="owl"> Owl<br>
+                <input type="radio" name="4answer" value="flamingo"> Flamingo<br>
+                <input type="radio" name="4answer" value="wren"> Wren<br>
+                <br>
+                <label><h3>What is the biggest living bird in North America?</h3></label>
+                <br>
+                <input type="radio" name="5answer" value="condor"> Condor<br>
+                <input type="radio" name="5answer" value="sparrow"> Sparrow<br>
+                <input type="radio" name="5answer" value="finch"> finch<br>
+                <input type="radio" name="5answer" value="duck"> Duck<br>
+                <br>
+                <label><h3>What bird is great at mimicking human sounds?</h3></label>
+                <br>
+                <input type="radio" name="6answer" value="purple martin"> Purple Martin<br>
+                <input type="radio" name="6answer" value="nightingale"> Nightingale<br>
+                <input type="radio" name="6answer" value="raven"> Raven<br>
+                <input type="radio" name="6answer" value="bluebird"> Bluebird<br>
+                <br>
+                <label><h3>What is the fastest bird on 2 legs?</h3></label>
+                <br>
+                <input type="radio" name="7answer" value="ostrich"> Ostrich<br>
+                <input type="radio" name="7answer" value="crow"> Crow<br>
+                <input type="radio" name="7answer" value="hawk"> Hawk<br>
+                <input type="radio" name="7answer" value="kingfisher"> Kingfisher<br>
+                <br>
+                <label><h3>What was the name of the Eagle that escaped from the London zoo in 1965?</h3></label>
+                <br>
+                <input type="radio" name="8answer" value="freebird">FreeBird<br>
+                <input type="radio" name="8answer" value="goldie"> Goldie<br>
+                <input type="radio" name="8answer" value="baldie"> Baldie<br>
+                <input type="radio" name="8answer" value="pterodactyl"> Pterodactyl<br>
+                <br>
+
+            </form>
+        </div>
+        <button id="done">Finish</button>
+    </div>
+    <div id=results>
+        <h1>Results</h1>
+        <div class="panel-body">
+            <div>
+                <h3>Correct: </h3>
+                <span id="correct"></span>
+              </div>
+        
+              <div>
+                <h3>Incorrect: </h3>
+                <span id="incorrect"></span>
+              </div>
+              
+            <h5>Blank: <span id="blank"></span></h5>
+        </div>
+        <br>
+        <button id="restart">Restart</button>
+        <p> </p>
+        <br>
+    </div>
 </div>
-<br>
-<div id=timer><b>You have <span id="countdown">60 seconds</span>to complete the quiz!</b></div>
- <br>
-
-<div id="quiz">
-<div id="question">
-<form action="trivia questions">
-    <label><h3>Which North American bird in the finch family is the most common state bird?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="pterodactyl"> Pterodactyl<br>
-    <input type="radio" name="1B" value="nightingale"> Nightingale<br>
-    <input type="radio" name="1C" value="cardinal"> Cardinal<br>
-    <input type="radio" name="1D" value="peacock"> Peacock<br>
-    <br>
-    <label><h3>What is the smallest bird in North America?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="bluejay"> Bluejay<br>
-    <input type="radio" name="1B" value="sparrow"> Sparrow<br>
-    <input type="radio" name="1C" value="chickadee"> Chickadee<br>
-    <input type="radio" name="1D" value="hummingbird"> Hummingbird<br>
-    <br>
-    <label><h3>What is the most coloful bird in North America?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="painted bunting"> Painted Bunting<br>
-    <input type="radio" name="1B" value="crow"> Crow<br>
-    <input type="radio" name="1C" value="gold finch"> Gold Finch<br>
-    <input type="radio" name="1D" value="canadian goose"> Canadian Goose<br>
-    <br>
-    <label><h3>Which bird is a night hunter?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="cardinal"> Cardinal<br>
-    <input type="radio" name="1B" value="owl"> Owl<br>
-    <input type="radio" name="1C" value="flamingo"> Flamingo<br>
-    <input type="radio" name="1D" value="wren"> Wren<br>
-    <br>
-    <label><h3>What is the biggest living bird in North America?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="condor"> Condor<br>
-    <input type="radio" name="1B" value="sparrow"> Sparrow<br>
-    <input type="radio" name="1C" value="finch"> finch<br>
-    <input type="radio" name="1D" value="duck"> Duck<br>
-    <br>
-    <label><h3>What bird is great at mimicking human sounds?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="hummingbird"> Hummingbird<br>
-    <input type="radio" name="1B" value="nightingale"> Nightingale<br>
-    <input type="radio" name="1C" value="raven"> Raven<br>
-    <input type="radio" name="1D" value="bluebird"> Bluebird<br>
-    <br>
-    <label><h3>What is the fastest bird on 2 legs?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="ostrich"> Ostrich<br>
-    <input type="radio" name="1B" value="crow"> Crow<br>
-    <input type="radio" name="1C" value="cardinal"> Cardinal<br>
-    <input type="radio" name="1D" value="kingfisher"> Kingfisher<br>
-    <br>
-    <label><h3>What was the name of the Eagle that escaped from the London zoo in 1965?</h3></label>
-    <br>
-    <input type="radio" name="1A" value="freebird">FreeBird<br>
-    <input type="radio" name="1B" value="goldie"> Goldie<br>
-    <input type="radio" name="1C" value="baldie"> Baldie<br>
-    <input type="radio" name="1D" value="pterodactyl"> Pterodactyl<br>
-    <br>
-
-</form>
-</div>
-<button id="done">Finish</button>
-</div>
-<div id=results>
-    <h1>Results</h1>
-    <p><b>Correct</b>: <span id=correct>0</span></p>
-    <p><b>Incorrect</b>: <span id=incorrect>0</span></p>
-    <p><b>Blank</b>: <span id=blank>0</span></p>
-    <br>
-<button id="restart">Restart</button>
-<p> </p>
-
-<br>
-</div>
-
-
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+<p></p>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 

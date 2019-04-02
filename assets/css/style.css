@@ -16,7 +16,7 @@ body{
     
 }
 
-#play, #done, #restart {
+#start, #done, #restart {
     text-shadow: 1px 1px black;
     color: rgb(50, 52, 53);
 }
