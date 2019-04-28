@@ -13,4 +13,6 @@ Users are allowed to choose one answer per question.
 
 Users score is talied once the submit button is clicked.
 
-Contributor: Jocelyn Shelton
+Sole contributor: Jocelyn Shelton
+
+https://j22shelton.github.io/TriviaGame/
