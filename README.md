@@ -16,3 +16,5 @@ Users score is talied once the submit button is clicked.
 Sole contributor: Jocelyn Shelton
 
 https://j22shelton.github.io/TriviaGame/
+
+![](/images/Trivia.png?raw=true)
